@@ -1,11 +1,11 @@
 {
   "name": "buildkite-sandbox",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "patch": "npm version patch --force && git commit --amend -m \"[ci skip] version bump\""
+    "patch": "npm version patch --force && git commit --amend -m \"[ci skip] version bump\" && git push"
   },
   "repository": {
     "type": "git",
