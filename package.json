@@ -1,15 +1,20 @@
 {
   "name": "buildkite-sandbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm version patch && git commit --amend -m \"[ci skip]\"",
+    "getVersion": "echo $npm_package_version"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/babtshe/buildkite-sandbox.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "7.18.0"
+  }
 }

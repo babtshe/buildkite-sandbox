@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  app:
+    build:
+      context: .
+      args:
+        - SERVICE=widget-api
+    image: node:14-alpine
