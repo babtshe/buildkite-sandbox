@@ -6,3 +6,5 @@ services:
       args:
         - SERVICE=widget-api
     image: node:14-alpine
+    command: tail -F anything
+
